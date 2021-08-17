@@ -1,92 +1,75 @@
-# MyReads Project
+# My Reads
 
-This is the starter template for the final assessment project for Udacity's React Fundamentals course. The goal of this template is to save you time by providing a static example of the CSS and HTML markup that may be used, but without any of the React code that is needed to complete the project. If you choose to start with this template, your job will be to add interactivity to the app by refactoring the static code in this template.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/558d1d59-a6cc-4058-9c1d-451e05b9e7a2/deploy-status)](https://app.netlify.com/sites/myreads14/deploys)
 
-Of course, you are free to start this project from scratch if you wish! Just be sure to use [Create React App](https://github.com/facebookincubator/create-react-app) to bootstrap the project.
+A Book Tracking App, built by React.js, allows you to organize your books library in 3 shelfs: (Currently Read Shelf), (Want to Read Shelf) & (Read Shelf) 
 
-## TL;DR
+![Screenshot](preview.png) 
+## Demo
+ 
 
-To get started developing right away:
+## Instructions, Building & Getting Started  
+    - 1- Fork, clone or download this repository to your local machine.
+    - 2- Be sure that you install the [Node.js](https://nodejs.org/en/) environment in your machine.
+    - 3- Open your terminal and Be sure that you are inside the correct destination of the App, while you must be in the same path of the package.json file and the website folder.
+    - 4- inside your terminal run these commands:-
+    
+        * to install dependencies.
+        ```
+        npm install
+        ```
+        * to start the server.
+        ```
+        npm start
+        ```
+    - 5- Once the app server is running visit (localhost:3000) in the browser to view the app and now you can treat with it as shown above in the Demo.
 
-* install all project dependencies with `npm install`
-* start the development server with `npm start`
+    - 6- You can also see a live preview of the app from this Link (https://myreads14.netlify.app/)
 
-## What You're Getting
-```bash
-├── CONTRIBUTING.md
-├── README.md - This file.
-├── SEARCH_TERMS.md # The whitelisted short collection of available search terms for you to use with your app.
-├── package.json # npm package manager file. It's unlikely that you'll need to modify this.
-├── public
-│   ├── favicon.ico # React Icon, You may change if you wish.
-│   └── index.html # DO NOT MODIFY
-└── src
-    ├── App.css # Styles for your app. Feel free to customize this as you desire.
-    ├── App.js # This is the root of your app. Contains static HTML right now.
-    ├── App.test.js # Used for testing. Provided with Create React App. Testing is encouraged, but not required.
-    ├── BooksAPI.js # A JavaScript API for the provided Udacity backend. Instructions for the methods are below.
-    ├── icons # Helpful images for your app. Use at your discretion.
-    │   ├── add.svg
-    │   ├── arrow-back.svg
-    │   └── arrow-drop-down.svg
-    ├── index.css # Global styles. You probably won't need to change anything here.
-    └── index.js # You should not need to modify this file. It is used for DOM rendering only.
-```
+## Features
 
-Remember that good React design practice is to create new JS files for each component and use import/require statements to include them where they are needed.
+*  The control to move any book from a shelf to another shelf or remove it from all shelfs.
+*  Search in a big library of many books at many categories which is integrated with an Udacity API  endpoint, and after that you can find your favorite book and add it into your own library in a specific shelf you choose.
 
-## Backend Server
+## Built With
 
-To simplify your development process, we've provided a backend server for you to develop against. The provided file [`BooksAPI.js`](src/BooksAPI.js) contains the methods you will need to perform necessary operations on the backend:
+* HTML
+* CSS
+* JS
+## API'S
 
-* [`getAll`](#getall)
-* [`update`](#update)
-* [`search`](#search)
+* JSON
+* Fetch 
 
-### `getAll`
+## Libraries & Packages
 
-Method Signature:
+* [Fontawesome](https://fontawesome.com/)
+* [PropTypes](https://www.npmjs.com/package/prop-types)
+## Frameworks 
 
-```js
-getAll()
-```
+* [React.js](https://reactjs.org/)  
+## Author
 
-* Returns a Promise which resolves to a JSON object containing a collection of book objects.
-* This collection represents the books currently in the bookshelves in your app.
+* Mohamed Elhawary  
 
-### `update`
+## Contact Me by my Social Accounts
 
-Method Signature:
+* Email: mohamed.k.elhawary@gmail.com  
 
-```js
-update(book, shelf)
-```
+* [Linkedin](https://www.linkedin.com/in/mohamed-elhawary14/)
 
-* book: `<Object>` containing at minimum an `id` attribute
-* shelf: `<String>` contains one of ["wantToRead", "currentlyReading", "read"]  
-* Returns a Promise which resolves to a JSON object containing the response data of the POST request
+* [Codepen](https://codepen.io/Mohamed-ElHawary)
 
-### `search`
+* [Behance](https://www.behance.net/mohamed-elhawary14)
 
-Method Signature:
+## Deploy with Me
 
-```js
-search(query)
-```
+Feel Free to Deploy it with me, send Issues or a Pull Request and i'll deal with you, just test it First.
 
-* query: `<String>`
-* Returns a Promise which resolves to a JSON object containing a collection of a maximum of 20 book objects.
-* These books do not know which shelf they are on. They are raw results only. You'll need to make sure that books have the correct state while on the search page.
+## Notices
 
-## Important
-The backend API uses a fixed set of cached search results and is limited to a particular set of search terms, which can be found in [SEARCH_TERMS.md](SEARCH_TERMS.md). That list of terms are the _only_ terms that will work with the backend, so don't be surprised if your searches for Basket Weaving or Bubble Wrap don't come back with any results.
+- This Application is a Practical Project from Udacity Nanodegree Program in the Field of Web Development Advanced Track.
 
-## Create React App
+## License
 
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app). You can find more information on how to perform common tasks [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
-
-## Contributing
-
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
-
-For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+Licensed under the [MIT License](LICENSE)
