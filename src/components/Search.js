@@ -14,6 +14,13 @@ export default class Search extends React.Component {
 		this.debouncer = this.debouncer.bind(this);
 	}
 
+	componentDidMount() {
+		this.props.initializeSearchLoader();
+		BooksAPI.getAll().then(data =>{
+            this.props.handleShelfs(data, "search");
+        });
+	}
+
 	debounce() {
 		let timeout = null;  
 		return function (value) {

@@ -10,12 +10,12 @@ export default class Home extends React.Component {
     componentDidMount() {
         this.props.initializeHomeLoader();
         BooksAPI.getAll().then(data =>{
-            this.props.handleShelfs(data);
+            this.props.handleShelfs(data, "home");
         });
     }
 
     render() {
-        const {shelfs, shelfOptionSelected, selectingOption, selectMenuDisabled, homeLoader, resetBooks} = this.props;
+        const {shelfs, shelfOptionSelected, selectingOption, selectMenuDisabled, homeLoader} = this.props;
         const allShelfs = Object.keys(this.props.shelfs).map(shelf => (
             <Shelf 
                 key={shelf} 
@@ -34,7 +34,7 @@ export default class Home extends React.Component {
                         {selectMenuDisabled && <Loader className="select-shelf-loader"/>}
                         <div>{allShelfs}</div>
                         <div className="open-search">
-                            <Link to="/search" onClick={resetBooks}><button>Add a book</button></Link>
+                            <Link to="/search"><button>Add a book</button></Link>
                         </div>
                     </>
                 )}

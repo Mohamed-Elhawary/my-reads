@@ -61,7 +61,7 @@ class BooksApp extends React.Component {
 				book["shelf"] = "none";
 			}
 		});
-		
+
 		this.setState({
 			books,
 			searchLoader: false
@@ -75,11 +75,17 @@ class BooksApp extends React.Component {
 		});
 	}
 
-	handleShelfs = (fetchedBooks) => {
+	handleShelfs = (fetchedBooks, screenName) => {
 		let clonedShelfs = this.state.shelfs;
-		this.setState({
-			books: fetchedBooks
-		});
+		if(screenName === "home") {
+			this.setState({
+				books: fetchedBooks
+			});
+		} else {
+			this.setState({
+				books: []
+			});
+		}
 
 		fetchedBooks.map(book => {
 			const bookShelf = book.shelf;
@@ -99,6 +105,7 @@ class BooksApp extends React.Component {
 
 		this.setState({
 			homeLoader: false,
+			searchLoader: false
 		});
 	}
 
@@ -135,7 +142,9 @@ class BooksApp extends React.Component {
 
 		let clonedBooks = this.state.books;
 		let requiredBook = clonedBooks.find(clonedBook => book.id === clonedBook.id);
-		requiredBook.shelf = shelf;
+		if(requiredBook) {
+			requiredBook.shelf = shelf;
+		}
 
 		this.setState({
 			...this.state,
@@ -154,7 +163,6 @@ class BooksApp extends React.Component {
 						<Route exact path="/">
 							<Home 
 								shelfs={this.state.shelfs} 
-								resetBooks={this.resetBooks}
 								handleShelfs={this.handleShelfs}
 								initializeHomeLoader={this.initializeHomeLoader}
 								homeLoader={this.state.homeLoader}
@@ -168,6 +176,7 @@ class BooksApp extends React.Component {
 								books={this.state.books}
 								shelfOptionSelected={this.shelfOptionSelected}
 								selectingOption={this.selectingOption}
+								handleShelfs={this.handleShelfs}
 								selectMenuDisabled={this.state.selectMenuDisabled}
 								resetBooks={this.resetBooks}
 								setBooks={this.setBooks}
