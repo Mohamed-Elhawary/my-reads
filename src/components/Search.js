@@ -25,7 +25,13 @@ export default class Search extends React.Component {
 	}
 	
 	generatesearchScreenUI(value) {
-		BooksAPI.search(value).then(data => this.props.setBooks(data));
+		BooksAPI.search(value).then(data => {
+			if(data.error) {
+				this.props.resetBooks();
+			} else {
+				this.props.setBooks(data);
+			}
+		});
 	}
 	
 	debouncer = this.debounce();
