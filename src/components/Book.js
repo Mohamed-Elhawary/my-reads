@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import * as BooksAPI from '../BooksAPI';
-
+import defaultBook from '../icons/default_book.jpg';
 export default function Book(props) {
     let {book, shelfOptionSelected, selectingOption, selectMenuDisabled} = props;
     const onSelectShelfOption = (bookObject, shelfName) => {
@@ -14,7 +14,7 @@ export default function Book(props) {
     return (
         <div className="book">
             <div className="book-top">
-                <div className="book-cover" style={{ width: 128, height: 174, backgroundImage: `url(${book.imageLinks.thumbnail})` }}></div>
+                <div className="book-cover" style={{ width: 128, height: 174, backgroundImage: `url(${book.imageLinks ? book.imageLinks.thumbnail : defaultBook})`}}></div>
                 <div className="book-shelf-changer">
                     <select 
                         onChange={(e) => onSelectShelfOption(book, e.target.value)}
