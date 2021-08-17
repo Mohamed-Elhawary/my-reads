@@ -47,6 +47,21 @@ class BooksApp extends React.Component {
 	}
 
 	setBooks = (books) => {
+		let currentlyReadingShelfBooks = this.state.shelfs.currentlyReading.data,
+		wantToReadShelfBooks  = this.state.shelfs.wantToRead.data,
+		readShelfBooks = this.state.shelfs.read.data;
+		books.map(book => {
+			if(currentlyReadingShelfBooks.some(shelfBook => shelfBook.id === book.id)) {
+				book["shelf"] = "currentlyReady";
+			} else if(wantToReadShelfBooks.some(shelfBook => shelfBook.id === book.id)) {
+				book["shelf"] = "wantToRead";
+			} else if(readShelfBooks.some(shelfBook => shelfBook.id === book.id)) {
+				book["shelf"] = "read";
+			} else {
+				book["shelf"] = "none";
+			}
+		});
+		
 		this.setState({
 			books,
 			searchLoader: false
