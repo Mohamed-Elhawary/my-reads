@@ -13,7 +13,7 @@ export default function Footer() {
             </div>
             <div className="bottom-content">
                 <p>All Rights are Reserved &copy; {new Date().getFullYear()}</p>
-                <p>Made by <a href="https://github.com/Mohamed-Elhawary" target="_blank">Hawary</a></p>
+                <p>Made by <a href="https://github.com/Mohamed-Elhawary" target="_blank">HaWaRy</a></p>
             </div>
         </div>
     )
