@@ -46,6 +46,8 @@ A Book Tracking App, built by React.js, allows you to organize your books librar
 
 * [Fontawesome](https://fontawesome.com/)
 * [PropTypes](https://www.npmjs.com/package/prop-types)
+* [React Router](https://www.npmjs.com/package/react-router)
+* [React Router Dom](https://www.npmjs.com/package/react-router-dom)
 ## Frameworks 
 
 * [React.js](https://reactjs.org/)  
