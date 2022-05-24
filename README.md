@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/558d1d59-a6cc-4058-9c1d-451e05b9e7a2/deploy-status)](https://app.netlify.com/sites/myreads14/deploys)
 
-A Book Tracking App, built by React.js, allows you to organize your books library in 3 shelfs: (Currently Read Shelf), (Want to Read Shelf) & (Read Shelf) 
+My Reads is a book tracking app, It allows you to organize your books library in 3 shelfs: (Currently Read Shelf), (Want to Read Shelf) & (Read Shelf)
 
 ![Screenshot](preview.png) 
 ## Demo
