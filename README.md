@@ -47,7 +47,7 @@ You can view the App from [here](https://myreads14.netlify.app/)
 
 * [React.js](https://reactjs.org/)  
 
-## API'S
+## API
 
 * [Booklender](https://www.booklender.com/)
 
