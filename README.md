@@ -36,11 +36,6 @@ You can view the App from [here](https://myreads14.netlify.app/)
 * CSS
 * JS
 
-## API'S
-
-* JSON
-* Fetch 
-
 ## Libraries & Packages
 
 * [Fontawesome](https://fontawesome.com/)
@@ -52,10 +47,14 @@ You can view the App from [here](https://myreads14.netlify.app/)
 
 * [React.js](https://reactjs.org/)  
 
+## API'S
+
+* [Booklender](https://www.booklender.com/)
+
 ## Features
 
 *  The control to move any book from a shelf to another shelf or remove it from all shelfs.
-*  Search in a big library of many books at many categories which is integrated with an Udacity API  endpoint, and after that you can find your favorite book and add it into your own library in a specific shelf you choose.
+*  Search in a big library of many books at many categories, you can find your favorite book and add it into your own library at a specific shelf you choose.
 
 ## Author
 
