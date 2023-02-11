@@ -38,10 +38,11 @@ You can view the App from [here](https://myreads14.netlify.app/)
 
 ## Libraries & Packages
 
-* [Fontawesome](https://fontawesome.com/)
+* [Font Awesome](https://fontawesome.com/)
 * [PropTypes](https://www.npmjs.com/package/prop-types)
 * [React Router](https://www.npmjs.com/package/react-router)
 * [React Router Dom](https://www.npmjs.com/package/react-router-dom)
+* [React Icons](https://react-icons.github.io/react-icons/)
 
 ## Frameworks 
 
