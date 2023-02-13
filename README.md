@@ -30,7 +30,12 @@ You can view the App from [here](https://myreads14.netlify.app/)
     - 5- Once the App server is running, visit (localhost:3000) in the browser to view the App and now you can treat with it as shown above in the Demo.
     - 6- You can also see a live preview of the App from this link (https://myreads14.netlify.app/)
 
-## Built With
+## Features
+
+*  The control to move any book from a shelf to another shelf or remove it from all shelfs.
+*  Search in a big library of many books at many categories, you can find your favorite book and add it into your own library at a specific shelf you choose.
+
+## Built with
 
 * HTML
 * CSS
@@ -46,28 +51,11 @@ You can view the App from [here](https://myreads14.netlify.app/)
 
 ## Frameworks 
 
-* [React.js](https://reactjs.org/)  
+* [React](https://reactjs.org/)  
 
 ## API
 
 * [Booklender](https://www.booklender.com/)
-
-## Features
-
-*  The control to move any book from a shelf to another shelf or remove it from all shelfs.
-*  Search in a big library of many books at many categories, you can find your favorite book and add it into your own library at a specific shelf you choose.
-
-## Author
-
-* [Mohamed Elhawary](https://www.linkedin.com/in/mohamed-elhawary14/) 
-
-## Contact me through my social accounts
-
-* Email: mohamed.k.elhawary@gmail.com
-* [LinkedIn](https://www.linkedin.com/in/mohamed-elhawary14/)
-* [Github](https://github.com/Mohamed-Elhawary)  
-* [Behance](https://www.behance.net/mohamed-elhawary14)
-* [Codepen](https://codepen.io/Mohamed-ElHawary) 
 
 ## Notices
 
@@ -76,6 +64,18 @@ You can view the App from [here](https://myreads14.netlify.app/)
 ## Certificate
 
 [Course Certificate](Certificate.pdf)
+
+## Author
+
+* [Mohamed Elhawary](https://www.linkedin.com/in/mohamed-elhawary14/) 
+
+## Contact me through my social accounts
+
+* Email: mohamed.k.elhawary@gmail.com
+* [Linkedin](https://www.linkedin.com/in/mohamed-elhawary14/)
+* [Github](https://github.com/Mohamed-Elhawary)  
+* [Behance](https://www.behance.net/mohamed-elhawary14)
+* [Codepen](https://codepen.io/Mohamed-ElHawary) 
 
 ## License
 
