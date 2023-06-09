@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/558d1d59-a6cc-4058-9c1d-451e05b9e7a2/deploy-status)](https://app.netlify.com/sites/myreads14/deploys)
 
-My Reads is a book tracking App allows you to organize your books library in 3 shelfs: (Currently Read Shelf), (Want to Read Shelf) & (Read Shelf). It depends on the API of Booklender website.
+My Reads is a book tracking App that allows you to organize your books library in 3 shelfs: (Currently Read Shelf), (Want to Read Shelf) & (Read Shelf). It depends on the API of Booklender website.
 
 You can view the App from [here](https://myreads14.netlify.app/)
 
